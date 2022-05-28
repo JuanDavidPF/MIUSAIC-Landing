@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap');
+
+* {
+    margin: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: var(--nunito);
+}
+
+:root {
+
+    --nunito: 'Nunito', sans-serif;
+    --ExtraBold: 800;
+    --SemiBold: 600;
+    --Regular: 400;
+
+    --cta__button__bgcolor: #FFC476;
+    --cta__button__color: #A97838;
+
+    --FontSize_MainTitle: 40px;
+    --FontSize_Title: 30px;
+    --FontSize_MainSubTitle: 24px;
+    --FontSize_Subtitle: 20px;
+    --FontSize_MainParagraph: 18px;
+    --FontSize_Paragraph: 16px;
+
+}
+
+
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 112px;
+    width: 100%;
+    height: fit-content;
+    min-height: 677px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-image: url("./resources/landingHeader.png");
+
+}
+
+header>.introduction {
+    padding: 100px 0;
+    width: 50%;
+
+    max-width: 12000px;
+
+}
+
+header>.introduction>h1 {
+    color: white;
+    font-size: var(--FontSize_MainTitle);
+    font-family: var(--nunito);
+    font-weight: var(--ExtraBold);
+    line-height: 98%;
+}
+
+header>.introduction>h3 {
+    margin-top: 22px;
+    color: white;
+    font-size: var(--FontSize_MainSubTitle);
+    font-family: var(--nunito);
+    font-weight: var(--Regular);
+    line-height: 120%;
+}
+
+header>.introduction>p {
+    margin-top: 22px;
+    color: white;
+    font-size: var(--FontSize_Paragraph);
+    font-family: var(--nunito);
+    font-weight: var(--Regular);
+    line-height: 120%;
+}
+
+header>.introduction>span {
+    margin-top: 30px;
+    color: rgb(214, 214, 214);
+    font-size: var(--FontSize_Paragraph);
+    font-weight: var(--Regular);
+    line-height: 120%;
+    display: flex;
+}
+
+header>.introduction>span>img {
+    margin: 0 20px;
+    width: 150px;
+}
+
+header>.introduction>h1>strong {
+    color: var(--cta__button__bgcolor);
+
+}
+
+
+header>.ornament {
+    pointer-events: none;
+    position: absolute;
+    bottom: -107px;
+    right: -0;
+    object-fit: contain;
+    width: 1033px;
+    -webkit-user-drag: none;
+}
+
+.navbar {
+    max-width: 2000px;
+    display: flex;
+    flex-wrap: wrap;
+
+    height: fit-content;
+    width: 100%;
+
+
+
+    justify-content: space-between;
+
+    padding: 46px 0px 30px 0px;
+
+}
+
+.navbar>.logo {
+    width: 150px;
+    object-fit: contain;
+    -webkit-user-drag: none;
+}
+
+.navbar>.navbar__controls {
+    padding: 4px 0px 8px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    column-gap: 15px;
+
+}
+
+.navbar>.navbar__controls>a:not(.cta__button) {
+    text-align: center;
+
+    padding: 0px 20px;
+    text-decoration: none;
+    color: white;
+    height: 20px;
+    font-family: var(--nunito);
+    font-weight: var(--SemiBold);
+    font-size: var(--FontSize_MainParagraph);
+}
+
+
+
+.navbar>.navbar__controls>hr {
+
+    border-left: 1px solid white;
+    height: 100%;
+
+}
+
+
+.cta__button {
+    cursor: pointer;
+    text-decoration: none;
+    border: 0;
+    width: fit-content;
+    height: fit-content;
+    font-family: var(--nunito);
+    font-size: var(--FontSize_Paragraph);
+    padding: 10px 30px;
+    border-radius: 8px;
+    color: var(--cta__button__color);
+    background-color: var(--cta__button__bgcolor);
+}
+
+
+.newsletter__subscription {
+    max-width: 500px;
+    min-width: 250px;
+    margin-top: 28px;
+    display: flex;
+    background-color: white;
+    border: 2px solid rgba(203, 193, 247, 0.38);
+    border-radius: 8px;
+}
+
+.newsletter__subscription>input {
+    border: none;
+    flex-grow: 1;
+    outline: none;
+    padding: 0 18px;
+    font-family: var(--nunito);
+    font-weight: var(--Regular);
+    font-size: var(--FontSize_MainParagraph);
+
+}
+
+
+@media (max-width: 1500px) {
+
+    :root {
+
+        --FontSize_MainTitle: 30px;
+        --FontSize_Title: 24px;
+        --FontSize_MainSubTitle: 20px;
+        --FontSize_Subtitle: 16px;
+        --FontSize_MainParagraph: 16px;
+        --FontSize_Paragraph: 14px;
+
+    }
+
+
+
+
+
+}
+
+@media (max-width: 1300px) {
+    header>.ornament {
+        display: none;
+    }
+
+    header>.introduction {
+
+        width: 70%;
+    }
+}
+
+@media (max-width: 1100px) {
+
+
+    :root {
+
+        --FontSize_MainTitle: 24px;
+        --FontSize_Title: 18px;
+        --FontSize_MainSubTitle: 16px;
+        --FontSize_Subtitle: 12px;
+        --FontSize_MainParagraph: 12px;
+        --FontSize_Paragraph: 12px;
+
+    }
+
+    .navbar>.navbar__controls {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    .navbar>.navbar__controls>hr {
+        display: none;
+
+    }
+
+
+
+    .navbar {
+        align-items: center;
+        row-gap: 20px;
+        flex-direction: column;
+
+    }
+
+    header>.introduction {
+        padding: 25px 0;
+        width: 100%;
+    }
+
+    .newsletter__subscription {
+        width: 100%;
+
+    }
+
+}
