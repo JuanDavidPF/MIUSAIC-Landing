@@ -1,0 +1,12 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 16 version
+*/
+
+.landing__page__nea {
+    width: 100%;
+    height: 200px;
+    background-color: violet;
+}

@@ -1,12 +1,27 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 16 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap');
 
 * {
     margin: 0;
-    -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-family: var(--nunito);
 }
+
+img {
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 
 :root {
 
@@ -15,8 +30,11 @@
     --SemiBold: 600;
     --Regular: 400;
 
+    --background__white: #FBFCFF;
     --cta__button__bgcolor: #FFC476;
     --cta__button__color: #A97838;
+    --greyish_black: #475467;
+    --miusaic__purple: #5764C0;
 
     --FontSize_MainTitle: 40px;
     --FontSize_Title: 30px;
@@ -24,6 +42,34 @@
     --FontSize_Subtitle: 20px;
     --FontSize_MainParagraph: 18px;
     --FontSize_Paragraph: 16px;
+}
+
+h1 {
+
+    font-size: var(--FontSize_MainTitle);
+}
+
+h2 {
+
+    font-size: var(--FontSize_Title);
+}
+
+h3 {
+
+    font-size: var(--FontSize_MainSubTitle);
+}
+
+h4 {
+
+    font-size: var(--FontSize_Subtitle);
+}
+
+p {
+    font-size: var(--FontSize_Paragraph);
+}
+
+p>strong {
+    font-size: var(--FontSize_MainParagraph);
 }
 
 
