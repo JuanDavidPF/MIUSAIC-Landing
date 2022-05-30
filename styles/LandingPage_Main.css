@@ -7,6 +7,7 @@
 
 .landing__page__main {
     position: relative;
+
 }
 
 .landing__page__main__benefits {
@@ -24,6 +25,7 @@
     -ms-flex-align: center;
     align-items: center;
     background-color: var(--background__white);
+
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -31,7 +33,7 @@
 
     position: relative;
 
-    max-width: 2000px;
+
 
 
 }
@@ -116,6 +118,8 @@
     max-width: 650px;
     min-width: 275px;
 }
+
+
 
 .landing__page__main__benefits>.grid__group {
     display: -webkit-box;

@@ -34,7 +34,9 @@ img {
     --cta__button__bgcolor: #FFC476;
     --cta__button__color: #A97838;
     --greyish_black: #475467;
+    --miusaic__lightPurple: #DFD0F7;
     --miusaic__purple: #5764C0;
+    --miusaic__violet: #7D78D9;
 
     --FontSize_MainTitle: 40px;
     --FontSize_Title: 30px;
@@ -42,6 +44,7 @@ img {
     --FontSize_Subtitle: 20px;
     --FontSize_MainParagraph: 18px;
     --FontSize_Paragraph: 16px;
+    --FontSize_Annotation: 14px;
 }
 
 h1 {
@@ -69,6 +72,7 @@ p {
 }
 
 p>strong {
+    font-weight: 400;
     font-size: var(--FontSize_MainParagraph);
 }
 
