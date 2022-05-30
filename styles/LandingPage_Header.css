@@ -96,104 +96,6 @@
     z-index: 100;
 }
 
-.landing__page__header__navbar {
-    max-width: 2000px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-
-    height: -webkit-fit-content;
-
-    height: -moz-fit-content;
-
-    height: fit-content;
-    width: 100%;
-
-
-
-    -webkit-box-pack: justify;
-
-
-
-    -ms-flex-pack: justify;
-
-
-
-    justify-content: space-between;
-
-    padding: 46px 0px 30px 0px;
-
-}
-
-.landing__page__header__navbar>.logo {
-    width: 150px;
-    -o-object-fit: contain;
-    object-fit: contain;
-    -webkit-user-drag: none;
-}
-
-.landing__page__header__navbar>.navbar__controls {
-    padding: 4px 0px 8px 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-
-    -webkit-column-gap: 15px;
-
-    -moz-column-gap: 15px;
-
-    column-gap: 15px;
-
-}
-
-.landing__page__header__navbar>.navbar__controls>a:not(.cta__button) {
-    text-align: center;
-
-    padding: 0px 20px;
-    text-decoration: none;
-    color: white;
-    height: 20px;
-    font-family: var(--nunito);
-    font-weight: var(--SemiBold);
-    font-size: var(--FontSize_MainParagraph);
-}
-
-
-
-.landing__page__header__navbar>.navbar__controls>hr {
-
-    border-left: 1px solid white;
-    height: 100%;
-
-}
-
-
-.cta__button {
-    cursor: pointer;
-    text-decoration: none;
-    border: 0;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    font-family: var(--nunito);
-    font-size: var(--FontSize_Paragraph);
-    padding: 10px 30px;
-    border-radius: 8px;
-    color: var(--cta__button__color);
-    background-color: var(--cta__button__bgcolor);
-}
 
 
 .newsletter__subscription {
@@ -240,32 +142,6 @@
         padding: 30px;
     }
 
-    .landing__page__header__navbar>.navbar__controls {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        row-gap: 10px;
-    }
-
-    .landing__page__header__navbar>.navbar__controls>hr {
-        display: none;
-
-    }
-
-
-
-    .landing__page__header__navbar {
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        row-gap: 20px;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-
-    }
 
     .landing__page__header>.introduction {
         padding: 25px 0;

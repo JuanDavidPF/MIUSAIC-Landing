@@ -76,6 +76,25 @@ p>strong {
     font-size: var(--FontSize_MainParagraph);
 }
 
+.cta__button {
+    cursor: pointer;
+    text-decoration: none;
+    border: 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    font-family: var(--nunito);
+    font-size: var(--FontSize_Paragraph);
+    padding: 10px 30px;
+    border-radius: 8px;
+    color: var(--cta__button__color);
+    background-color: var(--cta__button__bgcolor);
+}
+
+
 
 @media (max-width: 1500px) {
 
