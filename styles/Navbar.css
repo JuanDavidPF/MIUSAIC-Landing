@@ -69,6 +69,9 @@ nav>.navbar__controls>a:not(.cta__button) {
     font-size: var(--FontSize_MainParagraph);
 }
 
+nav>.navbar__controls>a.selected:not(.cta__button) {
+    font-weight: 800;
+}
 
 
 nav>.navbar__controls>hr {

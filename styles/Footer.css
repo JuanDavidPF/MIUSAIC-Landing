@@ -1,4 +1,4 @@
-.landing__page__footer {
+footer {
     position: sticky;
     display: flex;
 
@@ -13,7 +13,7 @@
     padding: 30px 110px 70px 110px;
     row-gap: 50px;
 
-
+    width: 100%;
 }
 
 .landing__page__footer__copyright {
@@ -59,17 +59,11 @@
 }
 
 @media (max-width: 1100px) {
-    .landing__page__footer {
+    footer {
         position: relative;
         flex-direction: column-reverse;
-    }
-
-    .landing__page__footer {
-
-
         padding: 30px 30px 70px 30px;
-
-
-
     }
+
+
 }
