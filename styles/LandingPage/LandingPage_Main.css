@@ -103,7 +103,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url("./../resources/processBG.png");
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;

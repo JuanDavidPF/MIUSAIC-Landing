@@ -60,6 +60,7 @@
 
 @media (max-width: 1100px) {
     .landing__page__footer {
+        position: relative;
         flex-direction: column-reverse;
     }
 
