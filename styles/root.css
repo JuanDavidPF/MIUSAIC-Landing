@@ -126,6 +126,9 @@ p>strong {
 
 }
 
+.unlisted {
+    display: none;
+}
 
 .input {
     display: flex;
