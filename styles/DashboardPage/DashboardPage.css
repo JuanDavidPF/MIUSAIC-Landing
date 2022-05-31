@@ -1,0 +1,147 @@
+html {
+    height: 100%;
+}
+
+body {
+
+
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+
+}
+
+nav {
+
+    top: 0;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    padding: 42px 40px;
+    justify-content: space-between;
+    align-items: center;
+
+    background: linear-gradient(190.35deg, #003687 1.44%, #B897FF 54.3%, rgba(255, 177, 73, 0.47) 114.09%, #FFFFFF 144.52%), #D9D9D9;
+    min-height: 500px;
+    box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.18);
+
+    width: 100px;
+    height: 100vh;
+
+
+
+}
+
+.nav__controls>img {
+    width: 36px;
+    margin-bottom: 60px;
+
+}
+
+
+main {
+    width: 100%;
+
+}
+
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+
+    padding: 28px 75px 24px 40px;
+}
+
+header>h1 {
+    color: var(--miusaic__violet);
+}
+
+header>div {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+
+header>div>img {
+    width: 65px;
+
+}
+
+.mainPanel>main {
+
+    background-color: var(--background__gray);
+    padding: 40px;
+
+
+}
+
+.video__group {
+    margin: 35px 0;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    justify-content: space-around;
+    grid-gap: 20px;
+}
+
+.video__button {
+    cursor: pointer;
+    border-style: none;
+
+    height: 145px;
+    mix-blend-mode: normal;
+    filter: drop-shadow(0px 9px 25px rgba(117, 35, 226, 0.3)) drop-shadow(0px 1px 3px rgba(16, 24, 40, 0.1)) drop-shadow(0px 1px 2px rgba(16, 24, 40, 0.06));
+    border-radius: 27px;
+    background-size: cover;
+
+}
+
+
+
+
+.nav__controls {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+
+nav>.nav__footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+
+.nav__btn {
+    background-color: transparent;
+    transition: background-color.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 50px;
+    border-style: none;
+    cursor: pointer;
+    margin: 10px 0;
+
+}
+
+.nav__btn.selected,
+.nav__btn:hover {
+    background-color: rgba(255, 255, 255, 0.459);
+
+}
+
+
+.nav__btn>img {
+    width: 34px;
+    pointer-events: none;
+}
