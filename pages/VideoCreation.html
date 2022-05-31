@@ -6,10 +6,101 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MIUSAIC - Editor</title>
+    <link rel="shortcut icon" href="./../resources/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./../styles/root.css">
+    <link rel="stylesheet" href="./../styles/Footer.css">
+    <link rel="stylesheet" href="./../styles/DashboardPage/DashboardPage.css">
+    <link rel="stylesheet" href="./../styles/DashboardPage/VideoCreation.css">
 </head>
 
 <body>
+    <nav>
 
+        <div class="nav__controls">
+            <img src="./../resources/Dashboard/platformLogo.png" alt="" srcset="">
+
+            <a href="" class="nav__btn selected"><img src="./../resources/Dashboard/home.png" alt=""></a>
+            <a href="./VideoCreation.html" class="nav__btn"><img src="./../resources/Dashboard/video.png" alt=""></a>
+            <a href="" class="nav__btn"><img src="./../resources/Dashboard/audio.png" alt=""></a>
+            <a href="" class="nav__btn"><img src="./../resources/Dashboard/mixing.png" alt=""></a>
+            <a href="" class="nav__btn"><img src="./../resources/Dashboard/user.png" alt=""></a>
+
+        </div>
+
+        <div class="nav__footer">
+            <a href="./Login.html" class="nav__btn"><img src="./../resources/Dashboard/sign out.png" alt=""></a>
+
+            <img src="./../resources/Dashboard/nea logo.png" alt="" srcset="">
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="mainPanel">
+            <header>
+                <h1 class="invisible">¡Hola profe!</h1>
+                <div>
+                    <img src="./../resources/Dashboard/profileIcon.png" alt="" srcset="">
+                    <p><strong>Sara Maldonado</strong></p>
+                </div>
+            </header>
+            <main>
+
+
+                <form id="VideoUpladerForm" action="">
+
+                    <div class="video__uploader">
+                        <img src="./../resources/Dashboard/cloud icon.png" alt="">
+
+                        <p><strong>Selecciona archivos de video para subirlos</strong></p>
+                        <p>Tus videos serán privados hasta que los publiques.</p>
+                        <label for="file-upload" class="video-upload cta__button">
+                            Selecciona archivos
+                            <input onchange="VideoChosen(event)" type="file" id="file-upload" name="video"
+                                accept=".mp4, .wav, .flv" required>
+
+                        </label>
+
+                        <p class="file-upload-result">No se ha seleccionado un archivo</p>
+                    </div>
+                    <section class="video__renamer">
+                        <div>
+                            <label for=""></label>
+                            <input type="text" required>
+                        </div>
+                        <div>
+                            <label for=""></label>
+                            <input type="text" required>
+                        </div>
+                    </section>
+                    <button type="submit">¡Continua con la creación de la música!</button>
+
+                </form>
+
+            </main>
+        </section>
+        <footer>
+            <div class="landing__page__footer__copyright">
+
+                <span>
+                    <p><strong>En asociación con:</strong></p> <img src="./../resources/logo_nea.png" alt="" srcset="">
+                </span>
+
+                <p>Todos los derechos reservados</p>
+
+            </div>
+            <div class="landing__page__footer__navigation">
+                <a href="">Términos y Condiciones</a>
+                <a href="">Política de Privacidad</a>
+                <a href="">Licencias de Uso</a>
+
+            </div>
+
+            </div>
+        </footer>
+    </main>
+    <script src="./../src/VideoCreation.js"></script>
 </body>
 
 </html>

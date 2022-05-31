@@ -1,0 +1,42 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* background-color: black; */
+}
+
+.video__uploader {
+    background-color: var(--background__white);
+    box-shadow: 0px 9px 39px 5px rgba(117, 35, 226, 0.3), 0px 4px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    height: 375px;
+    padding: 40px;
+    text-align: center;
+
+}
+
+.video__uploader>p>strong {
+    color: var(--miusaic__magenta);
+    font-weight: 800;
+}
+
+
+.video-upload {
+    cursor: pointer;
+}
+
+.video-upload>input {
+    z-index: -1;
+    position: absolute;
+    opacity: 0;
+}
+
+.video__renamer {
+    background-color: var(--background__white);
+}

@@ -62,6 +62,10 @@ header>div {
     align-items: center;
 }
 
+.invisible {
+    opacity: 0;
+}
+
 header>div>img {
     width: 65px;
 
